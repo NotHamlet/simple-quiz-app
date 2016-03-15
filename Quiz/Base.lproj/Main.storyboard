@@ -23,6 +23,12 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sZh-fw-b0f">
+                                <rect key="frame" x="279" y="90" width="42" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Xl-M3-FOL">
                                 <rect key="frame" x="251" y="118.5" width="98" height="30"/>
                                 <state key="normal" title="Next Question"/>
@@ -48,17 +54,22 @@
                         <constraints>
                             <constraint firstItem="llf-Sp-k1W" firstAttribute="top" secondItem="on0-4m-9Bk" secondAttribute="bottom" constant="8" id="2Gl-fc-xdE"/>
                             <constraint firstItem="B2q-hW-rqx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7Xb-ek-lRr"/>
+                            <constraint firstItem="7Xl-M3-FOL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KNc-vY-2Nh"/>
+                            <constraint firstItem="sZh-fw-b0f" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PdO-Ls-KcI"/>
                             <constraint firstItem="llf-Sp-k1W" firstAttribute="centerX" secondItem="7Xl-M3-FOL" secondAttribute="centerX" id="XXf-Xk-AIh"/>
                             <constraint firstItem="on0-4m-9Bk" firstAttribute="top" secondItem="7Xl-M3-FOL" secondAttribute="bottom" constant="107" id="hQB-gd-UcG"/>
                             <constraint firstItem="on0-4m-9Bk" firstAttribute="centerX" secondItem="7Xl-M3-FOL" secondAttribute="centerX" id="qh3-kh-ALa"/>
+                            <constraint firstItem="sZh-fw-b0f" firstAttribute="top" secondItem="B2q-hW-rqx" secondAttribute="top" id="qqC-jM-Vko"/>
                             <constraint firstItem="B2q-hW-rqx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="70" id="rsb-Qj-7UK"/>
-                            <constraint firstItem="B2q-hW-rqx" firstAttribute="centerX" secondItem="7Xl-M3-FOL" secondAttribute="centerX" id="uEs-w6-w8U"/>
                             <constraint firstItem="7Xl-M3-FOL" firstAttribute="top" secondItem="B2q-hW-rqx" secondAttribute="bottom" constant="8" id="yQy-tE-1Tq"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="answerLabel" destination="on0-4m-9Bk" id="4D5-cc-eHu"/>
-                        <outlet property="questionLabel" destination="B2q-hW-rqx" id="Xwx-OG-Igv"/>
+                        <outlet property="currentQuestionLabel" destination="B2q-hW-rqx" id="YTu-Ya-Yc4"/>
+                        <outlet property="currentQuestionLabelCenterXConstraint" destination="7Xb-ek-lRr" id="Y7j-9E-BEj"/>
+                        <outlet property="nextQuestionLabel" destination="sZh-fw-b0f" id="EIU-CC-6SQ"/>
+                        <outlet property="nextQuestionLabelCenterXConstraint" destination="PdO-Ls-KcI" id="E6N-8y-lbP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
